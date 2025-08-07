@@ -1,9 +1,6 @@
 @use "helpers" as *;
 
 html {
-  &.is-lock {
-    overflow: hidden;
-  }
 }
 
 body {
@@ -13,6 +10,11 @@ body {
   flex-direction: column;
   font-family: var(--font-family-base);
   overflow: hidden;
+
+  &.is-lock {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 main {

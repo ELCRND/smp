@@ -42,5 +42,6 @@ export class HumburgerMenu {
     this._MENU.classList.toggle("header__navigation-list--open");
     this._MENU_BTN.classList.toggle("header__menu-btn--open");
     this._MENU_BACKDROP.classList.toggle("header__menu-backdrop--open");
+    document.body.classList.toggle("is-lock");
   }
 }
