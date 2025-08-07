@@ -1,0 +1,24 @@
+@use "helpers" as *;
+
+:root {
+  --white: #fff;
+  --blue-1: #3a6dae;
+  --blue-2: #6a98d2;
+  --blue-hover: #5684be;
+  --blue-active: #4270aa;
+  --black: #222;
+  --gray: #667085;
+  --blue-background: #e6eff7;
+
+  --font-family: "Core Sans C", sans-serif;
+  --second-family: "Bert Sans", sans-serif;
+
+  --container-width: #{rem(1600)};
+  --container-padding-x: #{rem(10)};
+
+  --transition-duration: 0.2s;
+
+  @include laptop {
+    --container-width: #{rem(1280)};
+  }
+}

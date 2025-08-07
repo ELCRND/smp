@@ -1,0 +1,98 @@
+@use "helpers" as *;
+
+.container {
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include mobile-above {
+    display: none !important;
+  }
+}
+
+.button-regular {
+  padding: rem(26) rem(35) rem(32) rem(36);
+  border-radius: 4px;
+  background: linear-gradient(199deg, #396fb3 0%, #477dc1 100%);
+  position: relative;
+
+  @include mobile {
+    padding: rem(24) rem(30) rem(30) rem(32);
+  }
+
+  &:hover {
+    background: linear-gradient(199deg, #396fb3 0%, #477dc1 100%);
+    svg {
+      fill: #477dc1;
+    }
+  }
+  &:active {
+    background: linear-gradient(199deg, #255b9f 0%, #3369ad 100%);
+    svg {
+      width: 105%;
+      fill: #3369ad;
+      translate: -50% -50%;
+    }
+
+    &:before {
+      box-shadow: 0 0 50px 80px rgba(255, 255, 255, 0.14);
+    }
+  }
+
+  &:before {
+    content: "";
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 0 0 50px 80px rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 0;
+    left: 10%;
+    z-index: 1;
+    rotate: 55deg;
+  }
+
+  span {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: rem(16);
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+    z-index: 2;
+
+    @include mobile {
+      font-size: rem(14);
+    }
+  }
+
+  svg {
+    width: 110%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -53%;
+    z-index: 0;
+    transition: all 0.1s ease;
+
+    @include mobile {
+      width: 108%;
+      height: 75px;
+    }
+  }
+}
