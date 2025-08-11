@@ -22,13 +22,20 @@
 }
 
 .button-regular {
-  padding: rem(26) rem(35) rem(32) rem(36);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6px;
+  width: rem(296);
+  height: rem(85);
   border-radius: 4px;
   background: linear-gradient(199deg, #396fb3 0%, #477dc1 100%);
   position: relative;
 
   @include mobile {
     padding: rem(24) rem(30) rem(30) rem(32);
+    width: rem(259);
+    height: rem(75);
   }
 
   &:hover {
@@ -40,9 +47,9 @@
   &:active {
     background: linear-gradient(199deg, #255b9f 0%, #3369ad 100%);
     svg {
-      width: 105%;
+      width: 106%;
       fill: #3369ad;
-      translate: -50% -50%;
+      translate: -50% -50.65%;
     }
 
     &:before {
@@ -72,6 +79,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
+    text-wrap: nowrap;
     color: var(--white);
     position: relative;
     z-index: 2;
@@ -86,7 +94,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    translate: -50% -53%;
+    translate: -50% -55%;
     z-index: 0;
     transition: all 0.1s ease;
 

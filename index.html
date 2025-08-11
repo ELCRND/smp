@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=description
+        content="Оперативно, профессионально и недорого обезвреживаем медицинские, биологические, ветеринарные, фармацевтические и лабораторные отходы">
     <title>СМП</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -52,14 +54,21 @@
                 d="M23.1665 12.5C23.1665 6.60896 18.391 1.8335 12.5 1.8335C6.60896 1.8335 1.8335 6.60896 1.8335 12.5C1.8335 18.391 6.60896 23.1665 12.5 23.1665V25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5C25 19.4036 19.4036 25 12.5 25V23.1665C18.391 23.1665 23.1665 18.391 23.1665 12.5Z" />
         </symbol>
 
+
+
     </svg>
 
 
     <!-- HEADER -->
     <header class="header">
         <div class="header__container container">
-            <a href="/" class="header__logo"><img src="assets/img/common/logo.webp" alt="Логотип" width="83"
-                    height="46"></a>
+            <a href="#" class="header__logo">
+                <picture>
+                    <source type="image/avif" srcset="assets/img/common/logo.avif">
+                    <source type="image/webp" srcset="assets/img/common/logo.webp">
+                    <img src="assets/img/common/logo.png" alt="Логотип" width="83" height="46">
+                </picture>
+            </a>
 
             <nav class="header__navigation">
                 <div class="header__navigation-decoration--left"></div>
@@ -160,7 +169,6 @@
     </div>
 
 
-
     <!-- HERO -->
     <section class="hero">
         <div class="hero__container container">
@@ -195,9 +203,549 @@
                     <span>ПОДРОБНЕЕ ОБ УСЛУГАХ</span>
                 </a>
 
-                <img src="assets/img/main/hero/hero-img.webp" alt="Вывоз и утилизация" class="hero__img" width="619"
-                    height="496" draggable="false">
+                <picture>
+                    <source media="(max-width: 767px)" type="image/avif"
+                        srcset="assets/img/main/hero/hero-img-mobile.avif" width="320" height="256">
+                    <source media="(max-width: 767px)" type="image/webp"
+                        srcset="assets/img/main/hero/hero-img-mobile.webp" width="320" height="256">
+
+                    <source type="image/avif" srcset="assets/img/main/hero/hero-img.avif">
+                    <source type="image/webp" srcset="assets/img/main/hero/hero-img.webp">
+
+                    <img src="assets/img/main/hero/hero-img.png" alt="Вывоз и утилизация" class="hero__img" width="619"
+                        height="496">
+                </picture>
             </div>
+        </div>
+    </section>
+
+
+    <!-- HISTORY -->
+    <section class="history">
+        <div class="history__container container">
+            <h2 class="history__title">История компании</h2>
+
+            <ul class="history__timeline">
+
+                <li class="history__decoration">
+                    <span class="history__decoration-dot"></span>
+                    <span class="history__decoration-dot"></span>
+                    <span class="history__decoration-dot"></span>
+                </li>
+
+                <li class="history__event">
+                    <picture>
+                        <source media="(max-width: 767px)" type="image/avif"
+                            srcset="assets/img/main/history/history-2022-mobile.avif" width="290" height="200">
+                        <source media="(max-width: 767px)" type="image/webp"
+                            srcset="assets/img/main/history/history-2022-mobile.webp" width="290" height="200">
+
+                        <source type="image/avif" srcset="assets/img/main/history/history-2022.avif">
+                        <source type="image/webp" srcset="assets/img/main/history/history-2022.webp">
+
+                        <img src="assets/img/main/history/history-2022.jpg" alt="Основание и первые шаги" width="460"
+                            height="360" loading="lazy" draggable="false" class="history__img">
+                    </picture>
+
+                    <div class="history__content">
+                        <span class="history__year">2022</span>
+                        <h3 class="history__event-title">Основание и первые шаги</h3>
+                        <p class="history__description">
+                            Компания «СМП» начала свою деятельность в 2021 году с небольшого автопарка и команды
+                            профессионалов в сфере утилизации медицинских отходов. Первыми клиентами стали частные
+                            клиники и стоматологические центры.
+                        </p>
+
+                        <ul class="history__features">
+                            <li class="history__feature">
+                                <img src="assets/img/common/check-icon.svg" alt="check" width="28" height="28"
+                                    loading="lazy" draggable="false" class="history__feature-icon">
+                                <span class="history__feature-text">Мы сразу сделали ставку на строгое соблюдение СанПиН
+                                    и экологических норм, что помогло завоевать доверие партнеров.</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+
+                <li class="history__event">
+                    <picture>
+                        <source media="(max-width: 767px)" type="image/avif"
+                            srcset="assets/img/main/history/history-2023-mobile.avif" width="290" height="200">
+                        <source media="(max-width: 767px)" type="image/webp"
+                            srcset="assets/img/main/history/history-2023-mobile.webp" width="290" height="200">
+
+                        <source type="image/avif" srcset="assets/img/main/history/history-2023.avif">
+                        <source type="image/webp" srcset="assets/img/main/history/history-2023.webp">
+
+                        <img src="assets/img/main/history/history-2023.jpg" alt="Развитие и расширение" width="460"
+                            height="360" loading="lazy" draggable="false" class="history__img">
+                    </picture>
+
+                    <div class="history__content">
+                        <span class="history__year">2023</span>
+                        <h3 class="history__event-title">Развитие и расширение</h3>
+
+                        <ul class="history__features">
+                            <li class="history__feature">
+                                <img src="assets/img/common/check-icon.svg" alt="check" width="28" height="28"
+                                    loading="lazy" draggable="false" class="history__feature-icon">
+                                <span class="history__feature-text">
+                                    Получена лицензия Роспотребнадзора на работу с отходами классов Б и В
+                                </span>
+                            </li>
+                            <li class="history__feature">
+                                <img src="assets/img/common/check-icon.svg" alt="check" width="28" height="28"
+                                    loading="lazy" draggable="false" class="history__feature-icon">
+                                <span class="history__feature-text">
+                                    Заключены контракты с крупными больницами и лабораториями
+                                </span>
+                            </li>
+                            <li class="history__feature">
+                                <img src="assets/img/common/check-icon.svg" alt="check" width="28" height="28"
+                                    loading="lazy" draggable="false" class="history__feature-icon">
+                                <span class="history__feature-text">
+                                    Введена система GPS-мониторинга транспорта для контроля маршрутов
+                                </span>
+                            </li>
+                            <li class="history__feature">
+                                <img src="assets/img/common/check-icon.svg" alt="check" width="28" height="28"
+                                    loading="lazy" draggable="false" class="history__feature-icon">
+                                <span class="history__feature-text">
+                                    Автопарк увеличился до 10 специализированных машин
+                                </span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+
+                <li class="history__event">
+                    <picture>
+                        <source media="(max-width: 767px)" type="image/avif"
+                            srcset="assets/img/main/history/history-2024-mobile.avif" width="290" height="200">
+                        <source media="(max-width: 767px)" type="image/webp"
+                            srcset="assets/img/main/history/history-2024-mobile.webp" width="290" height="200">
+
+                        <source type="image/avif" srcset="assets/img/main/history/history-2024.avif">
+                        <source type="image/webp" srcset="assets/img/main/history/history-2024.webp">
+
+                        <img src="assets/img/main/history/history-2024.jpg" alt="Новые горизонты" width="460"
+                            height="360" loading="lazy" draggable="false" class="history__img">
+                    </picture>
+
+                    <div class="history__content">
+                        <span class="history__year">2024</span>
+                        <h3 class="history__event-title">Новые горизонты</h3>
+
+                        <ul class="history__features">
+                            <li class="history__feature">
+                                <img src="assets/img/common/check-icon.svg" alt="check" width="28" height="28"
+                                    loading="lazy" draggable="false" class="history__feature-icon">
+                                <span class="history__feature-text">
+                                    Расширение географии: начали обслуживать смежные регионы
+                                </span>
+                            </li>
+                            <li class="history__feature">
+                                <img src="assets/img/common/check-icon.svg" alt="check" width="28" height="28"
+                                    loading="lazy" draggable="false" class="history__feature-icon">
+                                <span class="history__feature-text">
+                                    Внедрение современных методов обеззараживания (инсинерация, автоклавирование)
+                                </span>
+                            </li>
+                            <li class="history__feature">
+                                <img src="assets/img/common/check-icon.svg" alt="check" width="28" height="28"
+                                    loading="lazy" draggable="false" class="history__feature-icon">
+                                <span class="history__feature-text">
+                                    Участие в национальном проекте по безопасной утилизации отходов
+                                </span>
+                            </li>
+                            <li class="history__feature">
+                                <img src="assets/img/common/check-icon.svg" alt="check" width="28" height="28"
+                                    loading="lazy" draggable="false" class="history__feature-icon">
+                                <span class="history__feature-text">
+                                    Планируется открытие собственного комплекса по переработке медотходов
+                                </span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- ACTIVITY -->
+    <section class="activity">
+        <div class="activity__container container">
+
+            <h2 class="activity__title">Направление деятельности</h2>
+
+            <div class="activity__wrapper">
+
+                <div class="activity__tooltip">
+                    <img src="assets/img/common/tooltip.avif" alt="Подсказка" width="40" height="40" loading="lazy"
+                        draggable="false" aria-hidden="true" class="activity__tooltip-icon">
+                    <p class="activity__tooltip-text">
+                        <b>Компания ООО «Современное медицинское партнерство»</b>
+                        занимается оказанием услуг по обращению с
+                        медицинскими отходами в соответствие с требованиями СанПиН 2.1.3684-21
+                    </p>
+                </div>
+
+                <ul class="activity__directions">
+                    <li class="activity__direction">
+                        <picture>
+                            <source srcset="assets/img/main/activity/medical-waste.svg" media="(max-width:767px)"
+                                width="60" height="60">
+
+                            <img src="assets/img/main/activity/medical-waste.svg" alt="Иконка" width="80" height="80"
+                                loading="lazy" draggable="false" class="activity__direction-img">
+                        </picture>
+                        <h3 class="activity__direction-title">Медицинские отходы</h3>
+                        <p class="activity__direction-description">Классы А, Б, В, Г</p>
+                    </li>
+
+                    <li class="activity__direction">
+                        <picture>
+                            <source srcset="assets/img/main/activity/bio-waste.svg" media="(max-width:767px)" width="60"
+                                height="60">
+
+                            <img src="assets/img/main/activity/bio-waste.svg" alt="Иконка" width="80" height="80"
+                                loading="lazy" draggable="false" class="activity__direction-img">
+                        </picture>
+                        <h3 class="activity__direction-title">Биологические <br> отходы</h3>
+                    </li>
+
+                    <li class="activity__direction">
+                        <picture>
+                            <source srcset="assets/img/main/activity/laboratory-waste.svg" media="(max-width:767px)"
+                                width="60" height="60">
+
+                            <img src="assets/img/main/activity/laboratory-waste.svg" alt="Иконка" width="80" height="80"
+                                loading="lazy" draggable="false" class="activity__direction-img">
+                        </picture>
+                        <h3 class="activity__direction-title">Лабораторные отходы</h3>
+                    </li>
+
+                    <li class="activity__direction">
+                        <picture>
+                            <source srcset="assets/img/main/activity/veterinary-waste.svg" media="(max-width:767px)"
+                                width="60" height="60">
+
+                            <img src="assets/img/main/activity/veterinary-waste.svg" alt="Иконка" width="80" height="80"
+                                loading="lazy" draggable="false" class="activity__direction-img">
+                        </picture>
+                        <h3 class="activity__direction-title">Ветеринарные отходы</h3>
+                    </li>
+
+                    <li class="activity__direction">
+                        <picture>
+                            <source srcset="assets/img/main/activity/pharmaceutical-waste.svg" media="(max-width:767px)"
+                                width="60" height="60">
+
+                            <img src="assets/img/main/activity/pharmaceutical-waste.svg" alt="Иконка" width="80"
+                                height="80" loading="lazy" draggable="false" class="activity__direction-img">
+                        </picture>
+                        <h3 class="activity__direction-title">Фармацевтические <br> отходы</h3>
+                    </li>
+
+                    <li class="activity__direction">
+                        <picture>
+                            <source srcset="assets/img/main/activity/bus.svg" media="(max-width:767px)" width="60"
+                                height="60">
+
+                            <img src="assets/img/main/activity/bus.svg" alt="Иконка" width="80" height="80"
+                                loading="lazy" draggable="false" class="activity__direction-img">
+                        </picture>
+                        <h3 class="activity__direction-title">Транспортные <br> услуги</h3>
+                    </li>
+
+                </ul>
+
+                <picture>
+                    <source media="(max-width: 767px)" type="image/avif"
+                        srcset="assets/img/main/activity/activity-img.avif" width="320" height="226">
+                    <source media="(max-width: 767px)" type="image/webp"
+                        srcset="assets/img/main/activity/activity-img.webp" width="320" height="226">
+
+                    <source type="image/avif" srcset="assets/img/main/activity/activity-img.avif">
+                    <source type="image/webp" srcset="assets/img/main/activity/activity-img.webp">
+
+                    <img src="assets/img/main/activity/activity-img.png" alt="деятельность" width="580" height="410"
+                        loading="lazy" draggable="false" class="activity__img">
+                </picture>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- STATISTICS -->
+    <section class="statistics">
+        <div class="statistics__container container">
+
+            <img src="assets/img/common/quote.svg" alt="quote" width="42" height="34" loading="lazy" draggable="false"
+                aria-hidden="true" class="statistics__decoration">
+
+            <h2 class="statistics__title">
+                «СМП» — ваш надежный партнер в сфере профессиональной утилизации медицинских
+                отходов!
+            </h2>
+
+            <ul class="statistics__list">
+
+                <li class="statistics__list-item">
+                    <span>8</span>
+                    <span>лет в сфере</span>
+                    <span>УТИЛИЗАЦИИ</span>
+                </li>
+
+                <li class="statistics__list-item">
+                    <span>50</span>
+                    <span>профессиональных</span>
+                    <span>СПЕЦИАЛИСТОВ</span>
+                </li>
+
+                <li class="statistics__list-item">
+                    <span>500</span>
+                    <span>довольных</span>
+                    <span>КЛИЕНТОВ</span>
+                </li>
+
+            </ul>
+
+            <picture>
+                <source media="(max-width: 767px)" type="image/avif"
+                    srcset="assets/img/main/statistics/statistics-img-mobile.avif" width="320" height="224">
+                <source media="(max-width: 767px)" type="image/webp"
+                    srcset="assets/img/main/statistics/statistics-img-mobile.webp" width="320" height="224">
+
+                <source type="image/avif" srcset="assets/img/main/statistics/statistics-img.avif">
+                <source type="image/webp" srcset="assets/img/main/statistics/statistics-img.webp">
+
+                <img src="assets/img/main/statistics/statistics-img.png" alt="Утилизация" class="statistics__img"
+                    width="600" height="420" loading="lazy" draggable="false">
+            </picture>
+
+        </div>
+    </section>
+
+
+    <!-- OBJECTIVES -->
+    <section class="objectives">
+        <div class="objectives__container container">
+            <h2 class="objectives__title">Цели и задачи</h2>
+
+            <div class="objectives__wrapper">
+
+                <div class="objectives__info">
+                    <p class="objectives__mission">
+                        <b>Наша миссия — </b>
+                        обеспечение безопасной и экологически ответственной утилизации медицинских отходов, защита
+                        здоровья людей и окружающей среды.
+                    </p>
+
+                    <h3 class="objectives__subtitle">Основные цели:</h3>
+
+                    <ul class="objectives__list">
+                        <li class="objectives__item">
+                            📌<b>Обеспечить надежность — </b>четкий график вывоза, оперативное реагирование на заявки.
+                        </li>
+                        <li class="objectives__item">
+                            📌<b>Гарантировать прозрачность — </b>полный документооборот и отчетность для клиентов.
+                        </li>
+                        <li class="objectives__item">
+                            📌<b>Повышать эффективность — </b>
+                            оптимизация логистики и внедрение автоматизированных систем учета.
+                        </li>
+                        <li class="objectives__item">
+                            📌<b>Развивать партнерство — </b>
+                            долгосрочное сотрудничество с медицинскими учреждениями на взаимовыгодных условиях.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="objectives__presentation">
+                    <h3 class="objectives__presentation-title">
+                        <picture>
+                            <source type="image/avif" srcset="assets/img/common/logo.avif">
+                            <source type="image/webp" srcset="assets/img/common/logo.webp">
+                            <img src="assets/img/common/logo.png" alt="Логотип" width="83" height="46" loading="lazy"
+                                draggable="false" class="objectives__logo">
+                        </picture>
+                        <span>Основные цели:</span>
+                    </h3>
+
+                    <ul class="objectives__presentation-list">
+                        <li class="objectives__presentation-item">
+                            ✓️ <b>Соблюдение всех норм — </b>строгое соответствие требованиям СанПиН, Роспотребнадзора
+                            и экологического
+                        </li>
+                        <li class="objectives__presentation-item">
+                            ✓️ <b>Технологическое развитие — </b>
+                            внедрение современных методов обеззараживания и переработки отходов.
+                        </li>
+                        <li class="objectives__presentation-item">
+                            ✓️ <b>Расширение географии — </b>
+                            увеличение зоны обслуживания и доступность услуг для новых регионов.
+                        </li>
+                        <li class="objectives__presentation-item">
+                            ✓ <b>Экологическая ответственность — </b>
+                            минимизация негативного воздействия на природу за счет безопасных технологий.
+                        </li>
+                    </ul>
+
+                    <img src="assets/img/main/objectives/objectives-presentation-top.png" alt=""
+                        class="objectives__decoration objectives__decoration--top" width="410" height="35"
+                        loading="lazy" draggable="false" aria-hidden="true">
+                    <img src="assets/img/main/objectives/objectives-presentation-plank.png" alt=""
+                        class="objectives__decoration objectives__decoration--middle" width="410" height="425"
+                        loading="lazy" draggable="false" aria-hidden="true">
+                    <img src="assets/img/main/objectives/objectives-presentation-bottom.png" alt=""
+                        class="objectives__decoration objectives__decoration--bottom" width="410" height="275"
+                        loading="lazy" draggable="false" aria-hidden="true">
+                </div>
+
+                <img src="assets/img/common/check-bg.svg" alt="" width="213" height="355" loading="lazy"
+                    aria-hidden="true" class="objectives__check-1">
+
+
+                <img src="assets/img/common/check-bg.svg" alt="" width="213" height="355" loading="lazy"
+                    aria-hidden="true" class="objectives__check-2">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- NEWS -->
+    <section class="news">
+        <div class="news__container container">
+
+            <h2 class="news__title">Новости компании</h2>
+
+            <div class="news__slider">
+                <ul class="news__list">
+
+                    <li class="news__item">
+                        <picture>
+                            <source type="image/avif" srcset="assets/img/main/news/news-1.avif">
+                            <source type="image/webp" srcset="assets/img/main/news/news-1.webp">
+
+                            <source type="image/avif" srcset="assets/img/main/news/news-1.avif" media="max-width:767px"
+                                width="300" height="150">
+                            <source type="image/webp" srcset="assets/img/main/news/news-1.webp" media="max-width:767px"
+                                width="300" height="150">
+
+                            <img src="assets/img/main/news/news-1.png" alt="news-1" width="248" height="186"
+                                loading="lazy" draggable="false" class="news__item-img">
+                        </picture>
+                        <h3 class="news__item-title">Расширение автопарка</h3>
+                        <p class="news__item-text">
+                            Компания «СМП» обновила парк спецтранспорта для вывоза медицинских отходов. В эксплуатацию
+                            введены новые машины с улучшенной системой обеззараживания, что повышает безопасность
+                            перевозки.
+                        </p>
+                        <a href="#" class="news__item-link">Показать больше</a>
+                    </li>
+
+                    <li class="news__item">
+                        <picture>
+                            <source type="image/avif" srcset="assets/img/main/news/news-2.avif">
+                            <source type="image/webp" srcset="assets/img/main/news/news-2.webp">
+
+                            <source type="image/avif" srcset="assets/img/main/news/news-2.avif" media="max-width:767px"
+                                width="300" height="150">
+                            <source type="image/webp" srcset="assets/img/main/news/news-2.webp" media="max-width:767px"
+                                width="300" height="150">
+
+                            <img src="assets/img/main/news/news-2.png" alt="news-2" width="248" height="186"
+                                loading="lazy" draggable="false" class="news__item-img">
+                        </picture>
+                        <h3 class="news__item-title">Получена новая лицензия</h3>
+                        <p class="news__item-text">
+                            Мы успешно прошли проверку Роспотребнадзора и получили дополнительную лицензию на утилизацию
+                            отходов класса Б. Теперь можем обслуживать ещё больше медицинских учреждений.
+                        </p>
+                        <a href="#" class="news__item-link">Показать больше</a>
+                    </li>
+
+                    <li class="news__item">
+                        <picture>
+                            <source type="image/avif" srcset="assets/img/main/news/news-3.avif">
+                            <source type="image/webp" srcset="assets/img/main/news/news-3.webp">
+
+                            <source type="image/avif" srcset="assets/img/main/news/news-3.avif" media="max-width:767px"
+                                width="300" height="150">
+                            <source type="image/webp" srcset="assets/img/main/news/news-3.webp" media="max-width:767px"
+                                width="300" height="150">
+
+                            <img src="assets/img/main/news/news-3.png" alt="news-3" width="248" height="186"
+                                loading="lazy" draggable="false" class="news__item-img">
+                        </picture>
+                        <h3 class="news__item-title">Внедрение электронного документооборота</h3>
+                        <p class="news__item-text">
+                            «СМП» перешла на цифровые акты приема-передачи отходов. Это ускоряет процесс оформления и
+                            исключает ошибки в отчетности.
+                        </p>
+                        <a href="#" class="news__item-link">Показать больше</a>
+                    </li>
+
+                    <li class="news__item">
+                        <picture>
+                            <source type="image/avif" srcset="assets/img/main/news/news-4.avif">
+                            <source type="image/webp" srcset="assets/img/main/news/news-4.webp">
+
+                            <source type="image/avif" srcset="assets/img/main/news/news-4.avif" media="max-width:767px"
+                                width="300" height="150">
+                            <source type="image/webp" srcset="assets/img/main/news/news-4.webp" media="max-width:767px"
+                                width="300" height="150">
+
+                            <img src="assets/img/main/news/news-4.png" alt="news-4" width="248" height="186"
+                                loading="lazy" draggable="false" class="news__item-img">
+                        </picture>
+                        <h3 class="news__item-title">Участие в экологическом форуме</h3>
+                        <p class="news__item-text">
+                            Наша компания выступила спикером на конференции «Безопасная утилизация отходов» и поделилась
+                            опытом внедрения современных технологий в работе.
+                        </p>
+                        <a href="#" class="news__item-link">Показать больше</a>
+                    </li>
+
+                    <li class="news__item">
+                        <picture>
+                            <source type="image/avif" srcset="assets/img/main/news/news-1.avif">
+                            <source type="image/webp" srcset="assets/img/main/news/news-1.webp">
+
+                            <source type="image/avif" srcset="assets/img/main/news/news-1.avif" media="max-width:767px"
+                                width="300" height="150">
+                            <source type="image/webp" srcset="assets/img/main/news/news-1.webp" media="max-width:767px"
+                                width="300" height="150">
+
+                            <img src="assets/img/main/news/news-1.png" alt="news-1" width="248" height="186"
+                                loading="lazy" draggable="false" class="news__item-img">
+                        </picture>
+                        <h3 class="news__item-title">Расширение автопарка</h3>
+                        <p class="news__item-text">
+                            Компания «СМП» обновила парк спецтранспорта для вывоза медицинских отходов. В эксплуатацию
+                            введены новые машины с улучшенной системой обеззараживания, что повышает безопасность
+                            перевозки.
+                        </p>
+                        <a href="#" class="news__item-link">Показать больше</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <a href="/" class="news__btn button-regular">
+                <svg width="320" height="85" fill="#5B91D5">
+                    <use xlink:href="#sprite-button"></use>
+                </svg>
+                <span>ВСЕ НОВОСТИ</span>
+            </a>
         </div>
     </section>
 

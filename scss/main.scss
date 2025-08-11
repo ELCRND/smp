@@ -6,4 +6,9 @@
 
 @use "./blocks/header";
 
-@use "./blocks/hero";
+@use "./blocks/main/hero";
+@use "./blocks/main/history";
+@use "./blocks/main/activity";
+@use "./blocks/main/statistics";
+@use "./blocks/main/objectives";
+@use "./blocks/main/news";

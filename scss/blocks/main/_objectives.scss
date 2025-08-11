@@ -1,0 +1,358 @@
+@use "../../helpers" as *;
+
+.objectives {
+  padding-top: rem(110);
+  padding-bottom: rem(80);
+  background: var(--blue-background);
+  overflow: hidden;
+  position: relative;
+
+  @include mobile {
+    padding-top: rem(60);
+  }
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    border-radius: 0 0 125px 125px;
+    background-color: var(--white);
+
+    @include mobile {
+      border-radius: 0 0 40px 40px;
+    }
+  }
+}
+
+.objectives__container {
+  max-width: calc(rem(1000) + 20px * 2);
+  padding-inline: rem(20);
+  position: relative;
+  right: 22px;
+
+  @include tablet {
+    right: 0;
+  }
+}
+
+.objectives__title {
+  @include fluid-text(26, 40);
+  margin-bottom: rem(40);
+  font-family: var(--font-family);
+  font-weight: 800;
+  line-height: 110%;
+  text-align: center;
+  color: var(--blue-1);
+
+  @include mobile {
+    margin-bottom: rem(21);
+  }
+}
+
+.objectives__wrapper {
+  border-radius: 60px 0 0 60px;
+  background: var(--blue-background);
+  display: flex;
+  gap: rem(5);
+  position: relative;
+
+  @include tablet {
+    max-width: rem(400);
+    margin-inline: auto;
+    border-radius: 0;
+    flex-direction: column;
+    gap: rem(34);
+    background-color: transparent;
+  }
+
+  @include mobile {
+    max-width: rem(320);
+  }
+}
+
+.objectives__info {
+  padding: rem(38) rem(40);
+
+  @include tablet {
+    padding: rem(20) rem(10);
+    border-radius: 20px;
+    background: var(--blue-background);
+  }
+}
+
+.objectives__mission {
+  margin-bottom: rem(20);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: rem(18);
+  line-height: 110%;
+  color: var(--gray);
+
+  @include mobile {
+    font-size: rem(14);
+    line-height: 140%;
+  }
+
+  b {
+    font-weight: 600;
+    color: var(--blue-1);
+  }
+}
+
+.objectives__subtitle {
+  margin-bottom: rem(22);
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: rem(18);
+  line-height: 110%;
+  color: var(--blue-1);
+
+  @include mobile {
+    margin-bottom: rem(13);
+    font-size: rem(16);
+  }
+}
+
+.objectives__list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+
+  @include mobile {
+    gap: 11px;
+  }
+}
+
+.objectives__item {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: rem(16);
+  color: var(--gray);
+
+  @include mobile {
+    font-size: rem(14);
+    line-height: 140%;
+  }
+
+  b {
+    font-weight: 600;
+    color: var(--black);
+  }
+}
+
+.objectives__presentation {
+  width: 362px;
+  height: 100%;
+  padding-top: rem(16);
+  flex-shrink: 0;
+
+  @include tablet {
+    padding-top: rem(25);
+    margin-inline: auto;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      content: "";
+      width: 60%;
+      height: 60%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      border-radius: 50%;
+      filter: blur(99.39427185058594px);
+      background: #376f98;
+      z-index: -1;
+    }
+  }
+
+  @include mobile {
+    width: 320px;
+    padding-top: rem(17);
+    padding-inline: 12px;
+  }
+}
+
+.objectives__presentation-title {
+  margin-bottom: rem(9);
+  display: flex;
+  align-items: flex-end;
+  gap: rem(15);
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: rem(18);
+  line-height: 110%;
+  color: var(--blue-1);
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  animation: opacity 0.4s ease 0.2s forwards;
+
+  @include mobile {
+    margin-bottom: rem(21);
+    gap: 10px;
+    font-size: rem(16);
+  }
+}
+
+.objectives__logo {
+  @include mobile {
+    width: 70px;
+    height: 38px;
+  }
+}
+
+.objectives__presentation-list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+  position: relative;
+  z-index: 3;
+
+  @include mobile {
+    margin-inline: auto;
+    gap: rem(8);
+  }
+}
+
+.objectives__presentation-item {
+  max-width: rem(350);
+  opacity: 0;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: rem(16);
+  color: var(--gray);
+
+  @include mobile {
+    font-size: rem(14);
+    max-width: rem(290);
+  }
+
+  b {
+    font-weight: 600;
+    color: var(--black);
+  }
+
+  &::first-letter {
+    margin-right: 5px;
+    font-weight: 800;
+    color: var(--blue-1);
+
+    @include mobile {
+      margin-right: 0px;
+    }
+  }
+
+  &:nth-of-type(1) {
+    animation: opacity 0.4s ease 0.4s forwards;
+  }
+  &:nth-of-type(2) {
+    animation: opacity 0.4s ease 0.6s forwards;
+  }
+  &:nth-of-type(3) {
+    animation: opacity 0.4s ease 0.8s forwards;
+  }
+  &:nth-of-type(4) {
+    animation: opacity 0.4s ease 1.1s forwards;
+  }
+}
+
+.objectives__decoration--top {
+  max-width: none;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  translate: 0 -70%;
+  z-index: 2;
+
+  @include tablet {
+    top: -20px;
+    right: 50%;
+    translate: 50% 0%;
+  }
+  @include mobile {
+    max-width: 100%;
+  }
+}
+
+.objectives__decoration--middle {
+  max-width: none;
+  position: absolute;
+  top: 10px;
+  right: -12px;
+  z-index: 1;
+  transform-origin: top center;
+  transform: scaleY(0);
+  animation: visible 2s ease forwards;
+
+  @include tablet {
+    right: 50%;
+    translate: 50% 0;
+  }
+  @include mobile {
+    max-width: 100%;
+  }
+}
+
+.objectives__decoration--bottom {
+  max-width: none;
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  translate: 0 100%;
+  z-index: 0;
+
+  @include tablet {
+    right: 50%;
+    translate: 50% 100%;
+  }
+  @include mobile {
+    max-width: 100%;
+  }
+}
+
+@keyframes visible {
+  80%,
+  90% {
+    transform: scaleY(1.03);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes opacity {
+  to {
+    opacity: 1;
+  }
+}
+
+.objectives__check-1 {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  translate: -36% 0;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.objectives__check-2 {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  translate: 0% 0;
+  z-index: 2;
+  opacity: 0;
+
+  @include tablet {
+    display: none;
+  }
+
+  animation: opacity 0.4s ease 2s forwards;
+}

@@ -1,0 +1,67 @@
+@use "../../helpers" as *;
+
+.news {
+  padding-top: rem(47);
+  background-color: var(--blue-background);
+}
+
+.news__container {
+  max-width: calc(rem(1300) + 20px * 2);
+}
+
+.news__title {
+  @include fluid-text(26, 40);
+  margin-bottom: rem(40);
+  font-family: var(--font-family);
+  font-weight: 800;
+  line-height: 110%;
+  text-align: center;
+  color: var(--blue-1);
+}
+
+.news__slider {
+  margin-bottom: rem(62);
+  overflow: hidden;
+}
+
+.news__list {
+  display: flex;
+  gap: rem(20);
+}
+
+.news__item {
+  min-width: rem(280);
+  padding: rem(20) rem(16);
+  background-color: var(--white);
+}
+
+.news__item-img {
+  margin-bottom: rem(12);
+}
+
+.news__item-title {
+  margin-bottom: rem(12);
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: rem(18);
+  color: var(--black);
+}
+
+.news__item-text {
+  margin-bottom: rem(12);
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: rem(16);
+  color: var(--gray);
+}
+
+.news__item-link {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: rem(14);
+  color: var(--blue-2);
+}
+
+.news__btn {
+  margin-inline: auto;
+}

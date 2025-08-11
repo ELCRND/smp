@@ -1,4 +1,4 @@
-@use "../helpers" as *;
+@use "../../helpers" as *;
 
 .hero {
   padding-top: rem(80);
@@ -13,7 +13,7 @@
 }
 
 .hero__wrapper {
-  padding: fluid(30, 50) fluid(10, 90) fluid(30, 70) fluid(10, 90);
+  padding: fluid(36, 69) fluid(10, 90) fluid(30, 70) fluid(10, 90);
   border-radius: 40px;
   background-color: var(--blue-background);
   position: relative;
@@ -23,6 +23,8 @@
   }
 
   @include mobile {
+    max-width: rem(340);
+    margin-inline: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,16 +32,17 @@
 }
 
 .hero__title {
-  margin-bottom: rem(30);
+  margin-bottom: rem(20);
   font-family: var(--font-family);
+  font-size: rem(16);
   font-weight: 800;
-  line-height: 190%;
+  line-height: 100%;
   color: var(--blue-1);
   position: relative;
   z-index: 1;
 
   @include mobile {
-    margin-bottom: rem(20);
+    margin-bottom: rem(17);
   }
 
   span {
@@ -47,20 +50,28 @@
 
     &:first-of-type {
       @include fluid-text(30, 56);
-      margin-bottom: rem(4);
-      //   font-size: rem(56);
+      height: rem(55);
+
+      @include mobile {
+        height: rem(32);
+      }
     }
 
     &:last-of-type {
       @include fluid-text(24, 40);
+      height: rem(44);
+
+      @include mobile {
+        height: rem(26);
+      }
     }
   }
 }
 
 .hero__text {
   @include fluid-text(14, 18);
-  max-width: fluid(292, 525);
-  margin-bottom: rem(24);
+  max-width: fluid(320, 525);
+  margin-bottom: rem(22);
   padding-left: rem(33);
   font-family: var(--second-family);
   font-weight: 400;
@@ -71,22 +82,34 @@
   z-index: 1;
 
   @include mobile {
-    margin-bottom: rem(20);
+    margin-bottom: rem(21);
+    padding-left: rem(28);
+    line-height: 127%;
+
+    &:before {
+      width: 18px;
+      height: 18px;
+    }
+
+    &::after {
+      width: 8px;
+      height: 8px;
+    }
   }
 
   &:nth-of-type(2) {
     margin-bottom: rem(13);
 
     @include mobile {
-      margin-bottom: rem(20);
+      margin-bottom: rem(21);
     }
   }
 
   &:last-of-type {
-    margin-bottom: rem(42);
+    margin-bottom: rem(44);
 
     @include mobile {
-      margin-bottom: rem(30);
+      margin-bottom: rem(32);
     }
   }
 
@@ -99,6 +122,12 @@
     position: absolute;
     top: 2px;
     left: 0;
+
+    @include mobile {
+      width: 18px;
+      height: 18px;
+      top: 4px;
+    }
   }
 
   &::after {
@@ -111,6 +140,12 @@
     top: 0;
     left: 0;
     translate: 50% 75%;
+
+    @include mobile {
+      width: 8px;
+      height: 8px;
+      translate: 62.5% 110%;
+    }
   }
 
   b {
