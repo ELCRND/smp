@@ -31,6 +31,7 @@
   border-radius: 4px;
   background: linear-gradient(199deg, #396fb3 0%, #477dc1 100%);
   position: relative;
+  z-index: 1;
 
   @include mobile {
     padding: rem(24) rem(30) rem(30) rem(32);
@@ -67,7 +68,7 @@
     position: absolute;
     top: 0;
     left: 10%;
-    z-index: 1;
+    z-index: 3;
     rotate: 55deg;
   }
 
@@ -82,7 +83,7 @@
     text-wrap: nowrap;
     color: var(--white);
     position: relative;
-    z-index: 2;
+    z-index: 4;
 
     @include mobile {
       font-size: rem(14);
@@ -95,7 +96,7 @@
     top: 50%;
     left: 50%;
     translate: -50% -55%;
-    z-index: 0;
+    z-index: 2;
     transition: all 0.1s ease;
 
     @include mobile {

@@ -4,7 +4,7 @@
   padding-top: rem(80);
 
   @include tablet {
-    padding-top: rem(67);
+    padding-top: rem(66);
   }
 }
 
@@ -13,7 +13,7 @@
 }
 
 .hero__wrapper {
-  padding: fluid(36, 69) fluid(10, 90) fluid(30, 70) fluid(10, 90);
+  padding: fluid(28, 43) fluid(10, 90) fluid(30, 70) fluid(10, 90);
   border-radius: 40px;
   background-color: var(--blue-background);
   position: relative;
@@ -27,22 +27,20 @@
     margin-inline: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 
 .hero__title {
-  margin-bottom: rem(20);
+  margin-bottom: rem(36);
   font-family: var(--font-family);
   font-size: rem(16);
   font-weight: 800;
-  line-height: 100%;
   color: var(--blue-1);
   position: relative;
   z-index: 1;
 
   @include mobile {
-    margin-bottom: rem(17);
+    margin-bottom: rem(22);
   }
 
   span {
@@ -50,20 +48,12 @@
 
     &:first-of-type {
       @include fluid-text(30, 56);
-      height: rem(55);
-
-      @include mobile {
-        height: rem(32);
-      }
+      line-height: 115%;
     }
 
     &:last-of-type {
       @include fluid-text(24, 40);
-      height: rem(44);
-
-      @include mobile {
-        height: rem(26);
-      }
+      line-height: 115%;
     }
   }
 }
@@ -71,7 +61,7 @@
 .hero__text {
   @include fluid-text(14, 18);
   max-width: fluid(320, 525);
-  margin-bottom: rem(22);
+  margin-bottom: rem(20);
   padding-left: rem(33);
   font-family: var(--second-family);
   font-weight: 400;
@@ -82,7 +72,7 @@
   z-index: 1;
 
   @include mobile {
-    margin-bottom: rem(21);
+    margin-bottom: rem(22);
     padding-left: rem(28);
     line-height: 127%;
 

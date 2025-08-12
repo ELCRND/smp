@@ -15,7 +15,7 @@
 }
 
 .statistics__decoration {
-  margin-bottom: rem(40);
+  margin-bottom: rem(42);
 
   @include tablet {
     margin-bottom: rem(20);
@@ -33,7 +33,7 @@
 
 .statistics__title {
   @include fluid-text(20, 28);
-  max-width: rem(540);
+  max-width: rem(580);
   margin-bottom: rem(62);
   font-family: var(--second-family);
   font-weight: 600;

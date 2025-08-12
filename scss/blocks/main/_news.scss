@@ -1,58 +1,199 @@
 @use "../../helpers" as *;
 
 .news {
-  padding-top: rem(47);
+  padding-top: rem(42);
+  padding-bottom: rem(10);
+  border-radius: 0 0 40px 40px;
   background-color: var(--blue-background);
+
+  @include mobile {
+    padding-top: rem(24);
+    padding-bottom: rem(2);
+  }
 }
 
 .news__container {
   max-width: calc(rem(1300) + 20px * 2);
+  padding-inline: rem(20);
+  display: flex;
+  flex-direction: column;
 }
 
 .news__title {
   @include fluid-text(26, 40);
-  margin-bottom: rem(40);
+  margin-bottom: rem(45);
   font-family: var(--font-family);
   font-weight: 800;
   line-height: 110%;
   text-align: center;
   color: var(--blue-1);
+
+  @include mobile {
+    max-width: rem(200);
+    margin-bottom: rem(22);
+    text-align: left;
+  }
 }
 
 .news__slider {
-  margin-bottom: rem(62);
+  margin-bottom: rem(54);
+  display: flex;
+  align-items: center;
+  gap: rem(20);
+  position: relative;
+
+  @include mobile {
+    max-width: rem(320);
+    margin-bottom: rem(28);
+    align-self: center;
+  }
+}
+
+.news__slider-wrapper {
   overflow: hidden;
+}
+
+.news__slider-prev,
+.news__slider-next {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--white);
+  border-radius: 6px;
+  padding: 12px;
+  flex-shrink: 0;
+  position: relative;
+
+  &:not(:disabled):hover {
+    background-color: var(--white);
+
+    &::before {
+      border-color: #26599a;
+    }
+  }
+
+  &:not(:disabled):active {
+    border-color: var(--blue-1);
+    background: var(--blue-1);
+
+    &::before {
+      border-color: var(--white);
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  @include mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    translate: -150% -145%;
+  }
+
+  &::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 2px 0 2px 0;
+    border-left: 3px solid var(--blue-1);
+    border-bottom: 3px solid var(--blue-1);
+    rotate: 45deg;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -30% -50%;
+    transition: border-color var(--transition-duration) ease;
+  }
+}
+
+.news__slider-next {
+  &::before {
+    rotate: -135deg;
+    translate: -70% -50%;
+  }
+
+  @include mobile {
+    right: 0;
+    translate: 0 -145%;
+  }
 }
 
 .news__list {
   display: flex;
   gap: rem(20);
+  transition: translate 0.5s ease-out;
 }
 
 .news__item {
   min-width: rem(280);
   padding: rem(20) rem(16);
+  border-radius: 4px;
   background-color: var(--white);
+
+  @include mobile {
+    min-width: rem(320);
+    padding: rem(10);
+  }
+
+  &--big-title {
+    .news__item-text {
+      line-clamp: 3;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+
+      @include mobile {
+        line-clamp: 4;
+        -webkit-line-clamp: 4;
+      }
+    }
+  }
 }
 
 .news__item-img {
   margin-bottom: rem(12);
+  border-radius: 4px;
+
+  @include mobile {
+    height: 150px;
+    object-fit: cover;
+  }
 }
 
 .news__item-title {
-  margin-bottom: rem(12);
+  margin-bottom: rem(10);
   font-family: var(--second-family);
   font-weight: 600;
   font-size: rem(18);
   color: var(--black);
+
+  @include mobile {
+    font-size: rem(16);
+  }
 }
 
 .news__item-text {
-  margin-bottom: rem(12);
+  margin-bottom: rem(5);
   font-family: var(--second-family);
   font-weight: 400;
   font-size: rem(16);
   color: var(--gray);
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+  @include mobile {
+    margin-bottom: rem(10);
+    font-size: rem(14);
+    line-clamp: 5;
+    -webkit-line-clamp: 5;
+  }
 }
 
 .news__item-link {
@@ -62,6 +203,28 @@
   color: var(--blue-2);
 }
 
-.news__btn {
+.news__btn-wrapper {
+  position: relative;
   margin-inline: auto;
+
+  img {
+    @include abs-center;
+    max-width: none;
+    z-index: 0;
+  }
+}
+
+.news__btn {
+  translate: 0 12px;
+
+  @include mobile {
+    width: rem(238);
+    height: rem(74);
+    translate: 0 13px;
+
+    svg {
+      width: rem(260);
+      translate: -50% -53.5%;
+    }
+  }
 }

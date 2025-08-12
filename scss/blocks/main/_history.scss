@@ -1,7 +1,7 @@
 @use "../../helpers" as *;
 
 .history {
-  padding-top: rem(75);
+  padding-top: rem(76);
 
   @include mobile {
     padding-top: rem(58);
@@ -23,7 +23,7 @@
 
 .history__title {
   @include fluid-text(26, 40);
-  margin-bottom: rem(43);
+  margin-bottom: rem(44);
   font-family: var(--font-family);
   font-weight: 800;
   line-height: 110%;
@@ -32,7 +32,7 @@
 
   @include mobile {
     text-align: left;
-    margin-bottom: rem(30);
+    margin-bottom: rem(28);
   }
 }
 
@@ -155,7 +155,7 @@
   @include fluid-text(34, 50);
   display: block;
   height: 50px;
-  margin-bottom: rem(16);
+  margin-bottom: rem(20);
   font-family: var(--font-family);
   font-weight: 800;
   line-height: 110%;
@@ -169,7 +169,7 @@
 
 .history__event-title {
   @include fluid-text(18, 20);
-  margin-bottom: rem(22);
+  margin-bottom: rem(18);
   font-family: var(--second-family);
   font-weight: 600;
   color: var(--black);

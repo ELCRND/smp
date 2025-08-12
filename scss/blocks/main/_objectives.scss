@@ -1,14 +1,15 @@
 @use "../../helpers" as *;
 
 .objectives {
-  padding-top: rem(110);
-  padding-bottom: rem(80);
+  padding-top: rem(106);
+  padding-bottom: rem(73);
   background: var(--blue-background);
   overflow: hidden;
   position: relative;
 
   @include mobile {
     padding-top: rem(60);
+    padding-bottom: rem(78);
   }
 
   &:before {
@@ -39,7 +40,7 @@
 
 .objectives__title {
   @include fluid-text(26, 40);
-  margin-bottom: rem(40);
+  margin-bottom: rem(44);
   font-family: var(--font-family);
   font-weight: 800;
   line-height: 110%;
@@ -311,6 +312,8 @@
   }
   @include mobile {
     max-width: 100%;
+    opacity: 0;
+    animation: opacity 0.2s ease forwards 1.6s;
   }
 }
 

@@ -4,7 +4,7 @@
   padding-top: rem(78);
 
   @include mobile {
-    padding-top: rem(58);
+    padding-top: rem(60);
   }
 }
 
@@ -27,7 +27,7 @@
     width: min-content;
     height: auto;
     margin-inline: auto;
-    margin-bottom: rem(55);
+    margin-bottom: rem(56);
     display: block;
   }
 }
@@ -66,7 +66,7 @@
   @include mobile {
     max-width: rem(320);
     width: 100%;
-    padding: rem(25) rem(10);
+    padding: rem(25) rem(10) rem(23) rem(10);
     border-radius: 20px;
   }
 }
@@ -127,9 +127,9 @@
 
 .activity__direction {
   width: rem(240);
-  min-height: rem(141);
+  min-height: rem(143);
   padding-top: rem(10);
-  padding-bottom: rem(19);
+  padding-bottom: rem(17);
   border: 1px solid #ccc;
   border-radius: 20px;
   background: var(--white);
@@ -138,12 +138,13 @@
   align-items: center;
 
   &:nth-of-type(1) {
-    min-height: rem(168);
+    min-height: rem(166);
   }
 
   @include mobile {
     width: rem(150);
     padding-top: rem(20);
+    padding-bottom: rem(19);
   }
 }
 
