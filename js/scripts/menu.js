@@ -18,6 +18,9 @@ export class HumburgerMenu {
 
   on() {
     this._MENU_BTN.addEventListener("click", this._handleToggle);
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 1023) this._handleClose();
+    });
   }
 
   off() {
@@ -29,12 +32,14 @@ export class HumburgerMenu {
     this._MENU.classList.add("header__navigation-list--open");
     this._MENU_BTN.classList.add("header__menu-btn--open");
     this._MENU_BACKDROP.classList.add("header__menu-backdrop--open");
+    document.body.classList.add("is-lock");
   }
   _close() {
     this._HEADER.classList.remove("header--open");
     this._MENU.classList.remove("header__navigation-list--open");
     this._MENU_BTN.classList.remove("header__menu-btn--open");
     this._MENU_BACKDROP.classList.remove("header__menu-backdrop--open");
+    document.body.classList.remove("is-lock");
   }
 
   _toggle() {

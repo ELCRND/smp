@@ -38,6 +38,7 @@
   &:has(.header__navigation-list--open) {
     picture {
       background-color: var(--blue-1);
+      transition: all 0.1s ease;
     }
   }
 }
@@ -49,13 +50,25 @@
   z-index: 102;
 
   @include tablet {
-    left: 50%;
-    translate: -297% 0;
+    // left: 50%;
+    // translate: -337% -1%;
+  }
+
+  @include tablet {
+    width: 31.55%;
+    display: flex;
+
+    picture {
+      width: 100%;
+      padding-right: 20px;
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 
   @include mobile {
-    left: 10px;
-    translate: 0 0;
+    left: 5px;
+    // translate: 0 0;
   }
 
   img {
@@ -344,12 +357,12 @@
   inset: 0;
   background: var(--blue-1);
   z-index: 100;
-  translate: 0 -100%;
+  opacity: 0;
 
   &--open {
     visibility: visible;
-    translate: 0 0;
-    transition: translate 0.1s ease;
+    opacity: 1;
+    transition: opacity 0.1s ease;
   }
 
   & > div {
